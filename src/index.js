@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+var boardSize = prompt('Enter board size (3-10)', 4);
+
+if (!boardSize || isNaN(boardSize)) {
+  boardSize = 4;
+} else {
+  // Make sure size is in the inclusive range (3, 10)
+  boardSize = Math.min(Math.max(Math.abs(boardSize), 3), 10);
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App size={boardSize} />
   </React.StrictMode>,
   document.getElementById('root')
 );

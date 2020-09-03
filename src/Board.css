@@ -1,0 +1,10 @@
+.Board {
+    background-color: #5f5ac7;
+    padding: 4px;
+    display: inline-block;
+    box-shadow: 10px 0px #6f6ad7 outset;
+}
+
+.Board-row {
+    padding: 0px;
+}
