@@ -67,7 +67,7 @@ class Board extends React.Component {
         let count = -1;
         let squares = [...Array(this.props.N)].map(_ => {
             return (
-                <div className="Board-row" key={parseInt(Math.random() * 1000)}>
+                <div className="Board-row" key={(count + 1) * this.props.N * 2}>
                     {[...Array(this.props.N)].map(_ => {
                         count += 1;
                         return (

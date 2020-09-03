@@ -9,7 +9,10 @@ class App extends React.Component {
         return (
             <div className="App">
                 <div className='App-title'>
-                    <h2>Tic Tac Toe</h2>
+                    <h1>Tic Tac Toe</h1>
+                </div>
+                <div className="App-button-panel">
+                    <button className='App-reset-btn' onClick={() => window.location.reload()}>Reset</button>
                 </div>
                 <Board N={this.props.size || DEFAULT_SIZE} />
             </div>
@@ -18,4 +21,3 @@ class App extends React.Component {
 }
     
 export default App;
-    

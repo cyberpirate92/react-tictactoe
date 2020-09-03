@@ -1,3 +1,28 @@
 .App {
-  text-align: center;
+    text-align: center;
+}
+.App-title h1 {
+    background-color: black;
+    padding: 1rem;
+    color: #fff;
+}
+.App-button-panel {
+    padding-bottom: 1rem;
+}
+.App-reset-btn {
+    background-color: #ff5974;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0 4px black;
+    border-radius: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.App-reset-btn:hover {
+    box-shadow: 0 0 6px black;
+}
+.align-right {
+    text-align: center;
 }
