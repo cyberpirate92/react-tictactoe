@@ -2,7 +2,7 @@ class Utils {
     /**
      * Check if game has a winner
      * 
-     * @param {Number[][]} board The tic tac toe grid 
+     * @param {String[][]} board The tic tac toe grid 
      * @param {Number} row Last move row index
      * @param {Number} col Last move col index
      * 
